@@ -517,7 +517,7 @@ def index(request):
 # after $python manage.py migrating to apply migration 
 # the text : 'hey welcome ' was seen on localhost server : http://127.0.0.1:8000/
 
-#IF NOT WORKING
+#For the base file : 
 #from django.urls import path, include <- add this to line 17
 # #if local host isnt open and is stuck on the django template and isn't showing hey welcome 
 #path('', include('myapp.urls) #if local host isnt opening add this line here 

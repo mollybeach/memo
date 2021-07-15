@@ -1,17 +1,78 @@
 
 Multi-line Editing: 
 
+Copying
 OPTION + SHIFT + UP/DOWN/CLICK
 
-Run Code : Command + Enter
-Run Python Code in Terminal : Command + R
+Select
+OPTION + COMMAND + UP/DOWN/ClICK
 
+Select next occurance 
+Command + D 
+
+Select all occurances
+COMMAND (⌘) + CONTROL (⌃) + G
+
+
+
+RUN CODE: 
+
+Run Code : Command + Enter
+
+
+
+
+
+
+Run Python Code in Terminal : Command + R
 Python Terminal
 
 Command R 
 Command Shift R
 
-[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[       
     {
         "key": "cmd+y",
         "command": "redo"
