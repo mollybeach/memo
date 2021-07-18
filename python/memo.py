@@ -982,5 +982,20 @@ The "feat" keyword indicates that the type of commit is a new feature, as oppose
 in blog file 
 django-admin startproject blog
 cd blog 
-python manage.py startapp posts
+python3 manage.py startapp posts
+
+#successfully created my app features database 
+# i think this fixed my problem python3 manage.py migrate --run-syncdb
+
+cd blog 
+python3 manage.py startapp posts
+python3 manage.py makemigrations
+python3 manage.py migrate
+
+
+if css is not loading to bypass the cache in mac gooogle chrome hold down shift and refresh the page 
+
+change to python3 
+
+
 '''
