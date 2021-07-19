@@ -3,7 +3,7 @@
 #heroku run python manage.py migrate
 #git add .
 #git commit -m "initial commit"
-#git push heroku master
+#git push heroku main
 #heroku ps:scale worker=1
 #heroku logs --tail
 #heroku open
