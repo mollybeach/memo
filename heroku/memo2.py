@@ -8,3 +8,5 @@
 #heroku logs --tail
 #heroku open
 #heroku ps:scale worker=0
+# admin not working with heroku?
+#heroku run python manage.py createsuperuser
