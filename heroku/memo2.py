@@ -26,6 +26,28 @@
 #You've not used rake db:migrate in production
 #heroku run rake db:migrate
 
+#get the error only one 1 free size dynos ?
+#in console run:
+
+#heroku ps
+#the result is some like this:
+
+#run.4859 (Free): up 2016/01/12 21:28:41 (~ 7m ago): rails c
+#So the numbers 4859 represent the session that is open and needs to be closed. To fix the error you need to run(Obviusly, replace the number 4859 by the number obtained):
+
+#heroku ps:stop run.4859
+#or
+#heroku ps:stop run.web.1
+#or
+#heroku ps:stop run.worker.1
+
+
+
+
+
+
+
+
 #Firstly, you need to create a production db to run on Heroku. Heroku does not host any db for you - it only runs on the Amazon EC2 stack; meaning you have to either prodivde your own DB server, or use one of Heroku's postgres instances
 
 #After you have a production database, you'll just need to run heroku run rake db:migrate from your command-line to get all your tables populated on the db server, which should resolve the error
