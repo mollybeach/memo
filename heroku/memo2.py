@@ -51,6 +51,7 @@ Add-on:                postgresql-concave-19053
 #if rows 0/10000 then it isnt updated 
 # python3 manage.py makemigrations 
 # python3 manage.py migrate
+#python3 manage.py migrate --run-syncdb
 #outside of the heroku app
 # and then recommit in heroku 
 
@@ -81,7 +82,7 @@ Third, use the \dt command from the PostgreSQL command prompt to show tables in 
 
 postgres=# \dt
 '''
-#python3 manage.py migrate --run-syncdb
+
 
 
 
