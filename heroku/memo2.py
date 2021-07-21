@@ -9,9 +9,13 @@
 #heroku logs --tail
 #heroku open
 #heroku ps:scale worker=0
-#collect static 
+
+#styles aren't updating ?  
 #heroku run python manage.py collectstatic
+#if styles still arent loading just copy the static files manually to the staticfiles folder and replace them with the modified version 
 # admin not working with heroku?
+
+#admin isn't working with heroku ? 
 #heroku run python manage.py createsuperuser
 #Anyway when you have DB you need to connect your APP with DB on Heroku. For this purpose I added in settings.py:
 
