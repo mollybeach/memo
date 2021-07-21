@@ -1,6 +1,6 @@
 #git init
 #heroku create
-heroku run python manage.py makemigrations
+#heroku run python manage.py makemigrations
 #heroku run python manage.py migrate
 #git add .
 #git commit -m "initial commit"
