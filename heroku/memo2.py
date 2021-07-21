@@ -8,6 +8,8 @@
 #heroku logs --tail
 #heroku open
 #heroku ps:scale worker=0
+#collect static 
+#heroku run python manage.py collectstatic
 # admin not working with heroku?
 #heroku run python manage.py createsuperuser
 #Anyway when you have DB you need to connect your APP with DB on Heroku. For this purpose I added in settings.py:
