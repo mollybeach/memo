@@ -116,43 +116,12 @@ for pg:push, just like for the pg:pull commands.
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-'''
-Password for user postgres:
-postgres=#
-Code language: PHP (php)
-Third, switch to a database e.g.., dvdrental:
-
-postgres=# \c dvdrental
-You are now connected to database "dvdrental" as user "postgres".
-Code language: PHP (php)
-Note that you can connect to a specific database when you log in to the PostgreSQL database server:
-
-$ psql -U postgres -d dvdrental
-In this command, -d flag means database. In this command, you connect to the dvdrental datbase using the postgres user.
-
-Third, use the \dt command from the PostgreSQL command prompt to show tables in the dvdrental database:
-
-postgres=# \dt
-'''
 
 #print heroku database tables in terminal 
 #heroku psql
 '''
 madeleinecoiffure::DATABASE->
+madeleinecoiffure::DATABASE-> \dt
                       List of relations
  Schema |            Name            | Type  |     Owner      
 --------+----------------------------+-------+----------------
@@ -169,10 +138,33 @@ madeleinecoiffure::DATABASE->
  public | salonapp_client            | table | kslmuwaiouqmwl
  public | salonapp_feature           | table | kslmuwaiouqmwl
 (12 rows)
-```
 
 
 
+
+
+
+  
+
+Password for user postgres:
+postgres=#
+Code language: PHP (php)
+Third, switch to a database e.g.., dvdrental:
+
+postgres=# \c dvdrental
+You are now connected to database "dvdrental" as user "postgres".
+Code language: PHP (php)
+Note that you can connect to a specific database when you log in to the PostgreSQL database server:
+
+$ psql -U postgres -d dvdrental
+In this command, -d flag means database. In this command, you connect to the dvdrental datbase using the postgres user.
+
+Third, use the \dt command from the PostgreSQL command prompt to show tables in the dvdrental database:
+
+postgres=# \dt
+
+
+'''
 
 
 
