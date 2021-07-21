@@ -79,9 +79,17 @@ Add-on:                postgresql-concave-19053
 #]
 
 
-              
-  
-  
+'''
+I faced the same problem in django 2.2, The following worked for me...
+
+delete the migrations folder resided inside the app folder
+delete the pycache folder too
+restart the server [if your server is on and you are working from another cli]
+python manage.py makemigrations <app_name> zero
+python manage.py makemigrations <app_name> [explicit app_name is important]
+python manage.py migrate
+
+  '''
   
   
   
