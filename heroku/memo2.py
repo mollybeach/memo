@@ -16,3 +16,4 @@
 #Anyway when you have DB you need to connect your APP with DB on Heroku. For this purpose I added in settings.py:
 
 #DATABASES = {'default': dj_database_url.config(default=‘URI of DB on Heroku’)}
+#heroku run python manage.py runserver
