@@ -164,14 +164,29 @@ Third, use the \dt command from the PostgreSQL command prompt to show tables in 
 
 postgres=# \dt
 
+Debugger listening on ws://127.0.0.1:50144/07a77bc2-1361-4fd2-87e8-0639aff52835
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Creating heroku-postgresql:hobby-dev on ⬢ madeleinecoiffure... free
+Database has been created and is available
+ ! This database is empty. If upgrading, you can transfer
+ ! data from another database with pg:copy
+Created postgresql-symmetrical-13357 as HEROKU_POSTGRESQL_MAROON_URL
 
 '''
 
 
+#Create NEW HEROKU DATABASE FROM TERMINAL
+#heroku addons:create heroku-postgresql:hobby-dev
+#$Created postgresql-symmetrical-13357 as HEROKU_POSTGRESQL_MAROON_URL
 
+#MAKE MAIN DATABASE
+#heroku pg:promote HEROKU_POSTGRESQL_MAROON 
 
+#heroku pg:push salon_db HEROKU_POSTGRESQL_MAROON --app madeleinecoiffure
 
-
+#heroku-cli: Pushing salon_db ---> postgresql-symmetrical-13357
+#pg_dump: last built-in OID is 16383
 #heroku run python manage.py runserver
 
 
