@@ -97,6 +97,7 @@ python manage.py migrate
 a remote Heroku Postgres database. The command looks like this:
 
 $ heroku pg:push mylocaldb HEROKU_POSTGRESQL_COLOR --app nameofapponheroku
+$ heroku pg:push salon_db HEROKU_POSTGRESQL_OLIVE --app madeleinecoiffure
 
 This command will take the local database “mylocaldb” and push it to the 
 database at DATABASE_URL on the app “sushi”. In order to prevent accidental 
@@ -107,9 +108,9 @@ Usage of the PGUSER and PGPASSWORD for your local database is also supported
 for pg:push, just like for the pg:pull commands.
 
 
-  PGUSER=postgres PGPASSWORD=password heroku pg:pull HEROKU_POSTGRESQL_COLOR mylocaldb --app nameofapponheroku
+  PGUSER=postgres PGPASSWORD=password heroku pg:pull HEROKU_POSTGRESQL_COLOR salon_db --app nameofapponheroku
   
-  PGUSER=postgres PGPASSWORD=jeannette487547 heroku pg:pull HEROKU_POSTGRESQL_OLIVE mylocaldb --app madeleinecoiffure
+  PGUSER=postgres PGPASSWORD=jeannette487547 heroku pg:pull HEROKU_POSTGRESQL_OLIVE salon_db --app madeleinecoiffure
   '''
   
   
@@ -140,7 +141,7 @@ madeleinecoiffure::DATABASE-> \dt
 (12 rows)
 
 
-
+use \q command and press enter to exit psql.
 
 
 
