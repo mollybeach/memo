@@ -30,27 +30,64 @@
 #in console run:
 
 #heroku ps
+#heroku pg
 #the result is some like this:
+'''
+=== HEROKU_POSTGRESQL_OLIVE_URL
+Plan:                  Hobby-dev
+Status:                Available
+Connections:           0/20
+PG Version:            13.3
+Created:               2021-07-18 06:00 UTC
+Data Size:             8.7 MB
+Tables:                12
+Rows:                  60/10000 (In compliance)
+Fork/Follow:           Unsupported
+Rollback:              Unsupported
+Continuous Protection: Off
+Add-on:                postgresql-concave-19053
+'''
+
+#if rows 0/10000 then it isnt updated 
+# python3 manage.py makemigrations 
+# python3 manage.py migrate
+#outside of the heroku app
+# and then recommit in heroku 
 
 #run.4859 (Free): up 2016/01/12 21:28:41 (~ 7m ago): rails c
 #So the numbers 4859 represent the session that is open and needs to be closed. To fix the error you need to run(Obviusly, replace the number 4859 by the number obtained):
 
 #heroku ps:stop run.4859
-#or
 #heroku ps:stop run.web.1
-#or
 #heroku ps:stop run.worker.1
 
 
 
+'''
+Password for user postgres:
+postgres=#
+Code language: PHP (php)
+Third, switch to a database e.g.., dvdrental:
+
+postgres=# \c dvdrental
+You are now connected to database "dvdrental" as user "postgres".
+Code language: PHP (php)
+Note that you can connect to a specific database when you log in to the PostgreSQL database server:
+
+$ psql -U postgres -d dvdrental
+In this command, -d flag means database. In this command, you connect to the dvdrental datbase using the postgres user.
+
+Third, use the \dt command from the PostgreSQL command prompt to show tables in the dvdrental database:
+
+postgres=# \dt
+'''
 
 
 
 
 
-#Firstly, you need to create a production db to run on Heroku. Heroku does not host any db for you - it only runs on the Amazon EC2 stack; meaning you have to either prodivde your own DB server, or use one of Heroku's postgres instances
 
-#After you have a production database, you'll just need to run heroku run rake db:migrate from your command-line to get all your tables populated on the db server, which should resolve the error
+
 
 
 #heroku run python manage.py runserver
