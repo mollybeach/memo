@@ -55,6 +55,7 @@ Add-on:                postgresql-concave-19053
 #outside of the heroku app
 # and then recommit in heroku 
 
+
 #run.4859 (Free): up 2016/01/12 21:28:41 (~ 7m ago): rails c
 #So the numbers 4859 represent the session that is open and needs to be closed. To fix the error you need to run(Obviusly, replace the number 4859 by the number obtained):
 
@@ -62,8 +63,46 @@ Add-on:                postgresql-concave-19053
 #heroku ps:stop run.web.1
 #heroku ps:stop run.worker.1
 
+#more issues with migrations?
+#just remove all the migrations out of the salonapp -> migrations folder -> and all the ones in pycache too
+
+#issues with static files ?
+#
+#STATIC_URL = '/static/'
+
+#if not DEBUG:
+#STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+#STATICFILES_DIRS = [
+ #   os.path.join(BASE_DIR),
+#]
 
 
+              
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 '''
 Password for user postgres:
 postgres=#
