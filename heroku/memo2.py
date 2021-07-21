@@ -1,3 +1,4 @@
+#if heroku is being really annoying -> heroku run python manage.py clearsessions
 #git init
 #heroku create
 #heroku run python manage.py makemigrations
