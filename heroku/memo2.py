@@ -81,6 +81,7 @@ Third, use the \dt command from the PostgreSQL command prompt to show tables in 
 
 postgres=# \dt
 '''
+#python3 manage.py migrate --run-syncdb
 
 
 
