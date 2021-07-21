@@ -149,6 +149,27 @@ Third, use the \dt command from the PostgreSQL command prompt to show tables in 
 postgres=# \dt
 '''
 
+#print heroku database tables in terminal 
+#heroku psql
+'''
+madeleinecoiffure::DATABASE->
+                      List of relations
+ Schema |            Name            | Type  |     Owner      
+--------+----------------------------+-------+----------------
+ public | auth_group                 | table | kslmuwaiouqmwl
+ public | auth_group_permissions     | table | kslmuwaiouqmwl
+ public | auth_permission            | table | kslmuwaiouqmwl
+ public | auth_user                  | table | kslmuwaiouqmwl
+ public | auth_user_groups           | table | kslmuwaiouqmwl
+ public | auth_user_user_permissions | table | kslmuwaiouqmwl
+ public | django_admin_log           | table | kslmuwaiouqmwl
+ public | django_content_type        | table | kslmuwaiouqmwl
+ public | django_migrations          | table | kslmuwaiouqmwl
+ public | django_session             | table | kslmuwaiouqmwl
+ public | salonapp_client            | table | kslmuwaiouqmwl
+ public | salonapp_feature           | table | kslmuwaiouqmwl
+(12 rows)
+```
 
 
 
