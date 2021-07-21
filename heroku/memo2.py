@@ -85,14 +85,32 @@ I faced the same problem in django 2.2, The following worked for me...
 delete the migrations folder resided inside the app folder
 delete the pycache folder too
 restart the server [if your server is on and you are working from another cli]
-python manage.py makemigrations <app_name> zero
+
 python manage.py makemigrations <app_name> [explicit app_name is important]
 python manage.py migrate
 
   '''
   
   
+  '''
+  Like pull but in reverse, pg:push will push data from a local database into 
+a remote Heroku Postgres database. The command looks like this:
+
+$ heroku pg:push mylocaldb HEROKU_POSTGRESQL_COLOR --app nameofapponheroku
+
+This command will take the local database “mylocaldb” and push it to the 
+database at DATABASE_URL on the app “sushi”. In order to prevent accidental 
+data overwrites and loss, the remote database must be empty. You will be 
+prompted to pg:reset an already a remote database that is not empty.
+
+Usage of the PGUSER and PGPASSWORD for your local database is also supported
+for pg:push, just like for the pg:pull commands.
+
+
+  PGUSER=postgres PGPASSWORD=password heroku pg:pull HEROKU_POSTGRESQL_COLOR mylocaldb --app nameofapponheroku
   
+  PGUSER=postgres PGPASSWORD=jeannette487547 heroku pg:pull HEROKU_POSTGRESQL_OLIVE mylocaldb --app madeleinecoiffure
+  '''
   
   
   
