@@ -27,6 +27,7 @@
 #You've not set a "real" production database
 #You've not used rake db:migrate in production
 #heroku run rake db:migrate
+#database still not working just delete it and create a new one 
 
 #get the error only one 1 free size dynos ?
 #in console run:
