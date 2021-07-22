@@ -14,6 +14,7 @@
 #styles aren't updating ?  
 #heroku run python manage.py collectstatic
 #if styles still arent loading just copy the static files manually to the staticfiles folder and replace them with the modified version 
+#or even better just delete the staticfiles folder and then run python manage.py collectstatic again to create the file again 
 # admin not working with heroku?
 
 #admin isn't working with heroku ? 
