@@ -1,0 +1,7 @@
+create new github repository from command line within the project
+
+
+git init -b master
+gh repo create project-name
+git pull --set-upstream origin master
+git add . && git commit -m "initial commit" && git push
