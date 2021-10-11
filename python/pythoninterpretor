@@ -1,0 +1,6 @@
+  File "/Users/mollybeach/Documents/git/pyweb3/api-call.py", line 2, in <module>
+    from web3 import Web3
+ImportError: No module named web3
+(base) mollybeach@Mollys-MacBook-Air pyweb3 % cd ..                                                         
+(base) mollybeach@Mollys-MacBook-Air git % source pyweb3/bin/activate
+(pyweb3) (base) mollybeach@Mollys-MacBook-Air git % python -u "/Users/mollybeach/Documents/git/pyweb3/api-call.py"
